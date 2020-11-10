@@ -1,0 +1,65 @@
+@font-face {
+    font-family:'Big Shoulders Stencil Text';
+    src: url('../fuentes/BigShouldersStencilDisplay-ExtraBold.ttf');
+}
+
+body {background-color:black;}
+#container {width:1800px;
+            height:900px;
+            background-image: url('../imagenes/fondo.jpg');
+            margin: auto;
+            position:relative; 
+}
+#titulo { position:absolute;
+          top:2px;
+          left:800px;
+          font-family:'Big Shoulders Stencil Text';
+          font-size:3em;
+          text-shadow:1px 1px 1px #A43100;
+}
+
+#texto { position: absolute;
+         top:230px;
+         left:530px;
+         font-family:'Big Shoulders Stencil Text';
+         font-size:3em;
+         text-shadow:1px 1px 1px yellow;
+} 
+
+#bruja {position:absolute;
+           top:100px;
+           left:180px;
+           visibility:hidden;
+}
+
+#calabaza {/*border:1px solid white;*/
+            width:250px;
+            height:200px;
+            position:absolute;
+            top:90px;
+            left:460px;
+            cursor:pointer;
+}
+
+#zombie {position:absolute;
+         top:700px;
+         left:770px;
+         visibility:hidden;
+}
+
+#murcielago{/*border:1px solid white;*/
+              width:100px;
+              height:110px;
+              position:absolute;
+              top:460px;
+              left:1520px;
+              cursor:pointer;
+}
+
+#texto1 { position: absolute;
+          top:550px;
+          left:1400px;
+          font-family:'Big Shoulders Stencil Text';
+          font-size:3em;
+          text-shadow:1px 1px 1px yellow;
+}

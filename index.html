@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorífica fiesta de Halloween</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo.css">
+
+    <script src="javascripts/funciones.js"></script>
+</head>
+<body onload="sonar('nana')">
+    <div id="container">
+        <audio id="nana" controls>
+           <source src="sonidos/lullaby.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="grito">
+           <source src="sonidos/grito.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="gritozombie">
+           <source src="sonidos/gritozombie.mp3" type="audio/mpeg">
+        </audio>
+        <p id="titulo">Terrorifica fiesta <br>de Halloween</p>
+        <img id="bruja" src="imagenes/bruja.gif" height="200" onclick="ocultar('bruja');parar('grito')">
+        <img id="zombie" src="imagenes/zombie.gif" height="180" onclick="ocultar('zombie');parar('gritozombie')">
+        <div id="calabaza" onclick="mostrar('bruja');sonar('grito')"></div>
+        <div id="murcielago" onclick="mostrar('zombie');sonar('gritozombie')"></div>
+        <p id="texto">No pinches en<br>esta calabaza</p>
+        <p id="texto1">No despiertes<br>al murcielago</p>
+    </div>
+</body>
+</html>
